@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="">
+
+<head>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+
+        const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (shouldSetIsDark) {
+            document.documentElement.classList.add('is_dark');
+            document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
+        }
+    </script>
+</head>
+<script src="./js/06-类/修饰符.js"></script>
+
+<body>
+    <h1>FWh-TEST</h1>
+</body>
+
+</html>
